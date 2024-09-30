@@ -1,0 +1,115 @@
+.login {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/background.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.login .logo {
+    width: max(18vw, 180px);
+    transition: transform 0.3s ease;
+}
+
+.login .logo:hover {
+    transform: scale(1.05); 
+}
+
+.login-form {
+    background: white;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 12px;
+    /* Added shadow */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form h2 {
+    font-weight: 600;
+    font-size: 24px; 
+    color: #333333;
+}
+
+.form-input {
+    padding: 12px 15px;
+    border: 1px solid #C9C9C9;
+    border-radius: 6px;
+    outline-color: #077EFF;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #077EFF;
+}
+
+.login-form button {
+    padding: 12px;
+    background-color: #077EFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #005bb5;
+}
+
+.login-term {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    color: #808080;
+}
+
+.login-toggle {
+    font-size: 14px;
+    color: #5C5C5C;
+}
+
+.login-toggle span {
+    font-weight: 500;
+    color: #077EFF;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.login-toggle span:hover {
+    color: #005bb5; 
+}
+
+.login-forgot {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+    color: #808080;
+}
+
+@media (max-width: 768px) {
+    .login {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+        background-position: center;
+    }
+
+    .login-form {
+        width: 90%; 
+        padding: 25px;
+    }
+
+    .login .logo {
+        width: 120px;
+    }
+}
