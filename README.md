@@ -26,17 +26,17 @@ A simple real-time chat application built with React, Vite, and Firebase. This a
 
 
 src/
-├── assets/          # Images and static assets
-├── components/      # Reusable components
-│   ├── ChatBox/     # Chat interface component
-│   ├── LeftSidebar/ # Navigation sidebar
-│   └── RightSidebar/# User info sidebar
-├── config/          # Firebase configuration
-├── context/         # React context for state management
-├── lib/             # Utility functions
-└── pages/           # Main application pages
-    ├── Chat/        # Main chat interface
-    ├── Login/       # Authentication page
+├── assets/           # Images and static assets
+├── components/       # Reusable components
+│   ├── ChatBox/      # Chat interface component
+│   ├── LeftSidebar/  # Navigation sidebar
+│   └── RightSidebar/ # User info sidebar
+├── config/           # Firebase configuration
+├── context/          # React context for state management
+├── lib/              # Utility functions
+└── pages/            # Main application pages
+    ├── Chat/         # Main chat interface
+    ├── Login/        # Authentication page
     └── ProfileUpdate/# Profile settings page
 
 
