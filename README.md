@@ -1,8 +1,6 @@
 # Real-Time Chat Application
 
-A modern real-time chat application built with React, Vite, and Firebase. This application allows users to communicate in real-time, update their profiles, and manage conversations seamlessly.
-
-![Chat App Preview](public/background.png)
+A simple real-time chat application built with React, Vite, and Firebase. This application allows users to communicate in real-time, update their profiles, and manage conversations seamlessly.
 
 ## 🌟 Features
 
