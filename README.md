@@ -67,14 +67,6 @@ VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
 npm run dev
 ```
 
-## 🌐 Production Deployment
-
-The application is configured for deployment on Vercel. The `vercel.json` configuration ensures proper routing for the SPA.
-
-To deploy:
-1. Install Vercel CLI: `npm install -g vercel`
-2. Run: `vercel`
-
 ## 🔑 Firebase Setup
 
 1. Create a new Firebase project
@@ -90,16 +82,4 @@ To deploy:
 3. Start chatting with other users
 4. Upload images in chats
 5. View online/offline status of users
-6. Update profile settings as needed
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/AmazingFeature`
-3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
-4. Push to the branch: `git push origin feature/AmazingFeature`
-5. Open a pull request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+6. Update profile settings as needed.
