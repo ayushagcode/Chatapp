@@ -1,60 +1,60 @@
 # Real-Time Chat Application
 
-A simple real-time chat application built with React, Vite, and Firebase. This application allows users to communicate in real-time, update their profiles, and manage conversations seamlessly.
+A modern real-time chat application built with React, Vite, and Firebase. This application allows users to communicate in real-time, update their profiles, and manage conversations seamlessly.
 
+![Chat App Preview](public/background.png)
 
 ## 🌟 Features
 
-- *Real-time messaging*
-- *User authentication* (Login/Signup)
-- *Profile customization*
-- *Password reset functionality*
-- *Message status indicators*
-- *Online/Offline status*
-- *Profile picture upload*
-- *Responsive design*
+- **Real-time messaging**
+- **User authentication** (Login/Signup)
+- **Profile customization**
+- **Password reset functionality**
+- **Message status indicators**
+- **Online/Offline status**
+- **Profile picture upload**
+- **Responsive design**
 
 ## 🚀 Tech Stack
 
-- React.js (Frontend UI)
-- HTML5 & CSS3 (Frontend)
-- Vite (build tool)
+- React.js
+- Vite
 - Firebase (Authentication, Firestore, Storage)
-
+- CSS3
 
 ## 📁 Project Structure
 
 ```
 src/
-├── assets/           # Images and static assets
-├── components/       # Reusable components
-│   ├── ChatBox/      # Chat interface component
-│   ├── LeftSidebar/  # Navigation sidebar
-│   └── RightSidebar/ # User info sidebar
-├── config/           # Firebase configuration
-├── context/          # React context for state management
-├── lib/              # Utility functions
-└── pages/            # Main application pages
-    ├── Chat/         # Main chat interface
-    ├── Login/        # Authentication page
+├── assets/          # Images and static assets
+├── components/      # Reusable components
+│   ├── ChatBox/     # Chat interface component
+│   ├── LeftSidebar/ # Navigation sidebar
+│   └── RightSidebar/# User info sidebar
+├── config/          # Firebase configuration
+├── context/         # React context for state management
+├── lib/             # Utility functions
+└── pages/           # Main application pages
+    ├── Chat/        # Main chat interface
+    ├── Login/       # Authentication page
     └── ProfileUpdate/# Profile settings page
 ```
 
-## 🛠 Setup and Installation
+## 🛠️ Setup and Installation
 
 1. Clone the repository:
-bash
+```bash
 git clone https://github.com/yourusername/chatapp.git
 cd chatapp
-
+```
 
 2. Install dependencies:
-bash
+```bash
 npm install
+```
 
-
-3. Create a .env file in the root directory and add your Firebase configuration:
-env
+3. Create a `.env` file in the root directory and add your Firebase configuration:
+```env
 VITE_FIREBASE_API_KEY=your_api_key
 VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
 VITE_FIREBASE_PROJECT_ID=your_project_id
@@ -62,13 +62,20 @@ VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
 VITE_FIREBASE_APP_ID=your_app_id
 VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
-
+```
 
 4. Start the development server:
-bash
+```bash
 npm run dev
+```
 
+## 🌐 Production Deployment
 
+The application is configured for deployment on Vercel. The `vercel.json` configuration ensures proper routing for the SPA.
+
+To deploy:
+1. Install Vercel CLI: `npm install -g vercel`
+2. Run: `vercel`
 
 ## 🔑 Firebase Setup
 
@@ -76,7 +83,7 @@ npm run dev
 2. Enable Authentication (Email/Password)
 3. Create a Firestore database
 4. Enable Storage for file uploads
-5. Add your Firebase configuration to the .env file
+5. Add your Firebase configuration to the `.env` file
 
 ## 💡 Usage
 
@@ -86,3 +93,15 @@ npm run dev
 4. Upload images in chats
 5. View online/offline status of users
 6. Update profile settings as needed
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/AmazingFeature`
+3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
+4. Push to the branch: `git push origin feature/AmazingFeature`
+5. Open a pull request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
