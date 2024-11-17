@@ -24,11 +24,13 @@ const RightSidebar = () => {
     <div className='rs'>
       <div className='rs-profile'>
         <img src={chatUser.userData.avatar} alt="" />
+        {/* if the user active within 70 sec a green dot is displayed */}
         <h3>{Date.now() - chatUser.userData.lastSeen <= 70000 ?<img className='dot' src={assets.green_dot} alt=''/>:null}{chatUser.userData.name}</h3>
         <p>{chatUser.userData.bio}</p>
       </div>
       <hr />
       <div className="rs-media">
+        {/* clicking on image opens in new window */}
         <p>Media</p>
         <div>
           {msgImages.map((url,index)=>(<img onClick={()=>window.open(url)} key={index} src={url} alt="" />))}

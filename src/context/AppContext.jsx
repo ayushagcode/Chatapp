@@ -18,10 +18,12 @@ const AppContextProvider = (props) => {
 
     const loadUserData = async (uid) => {
         try {
+            // getting user data
             const userRef = doc(db, 'users', uid);
             const userSnap = await getDoc(userRef);
             const userData = userSnap.data();
             setUserData(userData);
+            // if avatar and name is present then open chat page
             if (userData.avatar && userData.name) {
                 navigate('/chat');
             }
@@ -31,6 +33,7 @@ const AppContextProvider = (props) => {
             await updateDoc(userRef, {
                 lastSeen: Date.now()
             })
+            // keep update the user last seen status after a certain interval
             setInterval(async () => {
                 if (auth.chatUser) {
                     await updateDoc(userRef, {

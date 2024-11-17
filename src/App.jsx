@@ -14,6 +14,7 @@ const App = () => {
   const {loadUserData,setChatUser,setMessagesId} = useContext(AppContext);
 
   useEffect(() => {
+    // monitors authentication state of user
     onAuthStateChanged(auth, async (user) => {
       if (user) {
         loadUserData(user.uid);

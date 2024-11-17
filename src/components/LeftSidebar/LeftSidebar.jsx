@@ -15,7 +15,7 @@ const LeftSidebar = () => {
     const navigate = useNavigate();
 
     const inputHandler = async (e) => {
-
+        // handles search bar 
         try {
             const input = e.target.value;
 

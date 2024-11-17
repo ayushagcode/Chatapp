@@ -17,7 +17,6 @@ const ChatBox = () => {
   const sendMessage = async () => {
 
     try {
-
       if (input && messagesId) {
         await updateDoc(doc(db, "messages", messagesId), {
           messages: arrayUnion({
@@ -26,7 +25,7 @@ const ChatBox = () => {
             createdAt: new Date()
           })
         })
-
+        
         const userIDs = [chatUser.rId, userData.id];
 
         userIDs.forEach(async (id) => {
